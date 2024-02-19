@@ -4,7 +4,9 @@ import './App.css'
 
 
 function App() {
-  const [puppies, setPuppies] = useState(puppyList);
+  //removed setPuppies function, was unused. Would be used to update state of puppies list.
+  //Workshop did not have such functionality on my workthrough unless I missed it. 
+  const [puppies] = useState(puppyList);
   const [featPupId, setFeatPupId] = useState(null);
   const [featuredPup, setFeaturedPup] = useState(null);
 
@@ -18,6 +20,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Puppy Pals</h1>
       {puppies.map((puppy) => {
         return (
           <p key={puppy.id} onClick={() => handleClick(puppy.id)}>
@@ -26,7 +29,7 @@ function App() {
         );
       })}
       {featPupId && featuredPup && (
-        <div>
+        <div id="pupdetails">
           <h2>{featuredPup.name}</h2>
           <ul>
             <li>Age: {featuredPup.age}</li>
