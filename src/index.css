@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #646cff;
 }
 
 h1 {
@@ -65,4 +66,41 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.pupdetails {
+  text-shadow: #1a1a1a;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 100px;
+}
+
+h2 {
+  background-color: rgba(255,255,255,0.7); 
+  padding: 15px 15px 0 15px;
+  text-align: left;
+}
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 0;
+}  
+li {
+  flex: 1 1 300px;
+  max-height: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.App {
+  max-height: auto;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+  overflow: auto;
 }
